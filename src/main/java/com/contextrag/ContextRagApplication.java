@@ -1,0 +1,11 @@
+package com.contextrag;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ContextRagApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ContextRagApplication.class, args);
+    }
+}
