@@ -17,6 +17,9 @@ public class LLMListener {
      */
     @EventListener
     public void handle(PromptEvent event) {
-        System.out.println("LLM: Generating response for prompt: " + event.getPrompt());
+        System.out.println(
+                "LLM: Generating response for eventId=" + event.getEventId()
+                        + " prompt=" + event.getPrompt()
+        );
     }
 }

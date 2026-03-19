@@ -27,7 +27,8 @@ public class RAGOrchestrator {
      * @param prompt prompt text submitted by the caller
      */
     public void handlePrompt(String prompt) {
-        System.out.println("Orchestrator: Prompt received");
-        publisher.publishEvent(new PromptEvent(prompt));
+        PromptEvent event = new PromptEvent(prompt);
+        System.out.println("Orchestrator: Prompt received for eventId=" + event.getEventId());
+        publisher.publishEvent(event);
     }
 }
