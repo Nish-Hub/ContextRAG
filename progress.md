@@ -38,6 +38,10 @@ Phase: Foundation setup
 - No persistence, retrieval, or vector store integration exists yet
 - No error handling or input validation is implemented yet
 
+## Technical Backlog
+
+- Async event handling with a bounded executor is tracked in [docs/tech-backlog.md](/Users/kobayashimaruu/Documents/llm/contextrag/docs/tech-backlog.md)
+
 ## API Snapshot
 
 - `POST /rag/prompt`
